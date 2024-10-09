@@ -13,14 +13,37 @@ body {
   grid-template-rows: repeat(20, 50px);
 }
 
-#button {
+#buttons {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
   top: 1rem;
   right: 1rem;
-  padding: 5px;
+}
+
+button {
   color: white;
   border: none;
   cursor: pointer;
+  padding: 5px;
+}
+
+#step-button {
+  background-color: blue;
+}
+
+#step-button:hover {
+  background-color: darkblue;
+}
+
+#clear-button {
+  background-color: orange;
+}
+
+#clear-button:hover {
+  background-color: darkorange;
 }
 
 .stop-button {
