@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+}
+
+body {
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(20, 50px);
+  grid-template-rows: repeat(20, 50px);
+}
+
+#button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.stop-button {
+  background-color: crimson;
+}
+
+.stop-button:hover {
+  background-color: darkred;
+}
+
+.start-button {
+  background-color: green;
+}
+
+.start-button:hover {
+  background-color: darkgreen;
+}
+
+.dead-item {
+  background-color: white;
+}
+
+.alive-item {
+  background-color: black;
+}
+
+.grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.grid-item:hover {
+  background-color: gray;
+}
