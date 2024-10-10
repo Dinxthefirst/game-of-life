@@ -86,7 +86,7 @@ function gridElements() {
       const div = document.createElement("div");
       div.classList.add("grid-item");
       div.classList.add("dead-item");
-      div.title = `Item ${row + 1}`;
+      div.title = `Item (${row + 1}, ${col + 1})`;
       div.dataset.row = row;
       div.dataset.col = col;
       gridContainer.appendChild(div);

@@ -5,29 +5,39 @@
 body {
   -webkit-user-drag: none;
   user-select: none;
+  font-size: 16px;
+}
+
+button {
+  color: white;
+  padding: 0.5rem;
+  font-weight: bold;
+  text-shadow: 2px;
+  border: none;
+  cursor: pointer;
 }
 
 #grid-container {
   display: grid;
+  border: 10px solid black;
   grid-template-columns: repeat(20, 50px);
   grid-template-rows: repeat(20, 50px);
+  width: min-content;
+  height: min-content;
+}
+
+#grid-container > * {
+  border: 2px solid black;
 }
 
 #buttons {
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
   top: 1rem;
   right: 1rem;
-}
-
-button {
-  color: white;
-  border: none;
-  cursor: pointer;
-  padding: 5px;
 }
 
 #step-button {
@@ -74,7 +84,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 2px;
   cursor: pointer;
 }
 
